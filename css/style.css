@@ -224,7 +224,26 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  padding: 5px 20px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  /* Metin arka planı ekleme */
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* Metin gölgesi ekleme */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
 
+.header_section {
+    /* navbar arka planını koyu yapmak */
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
 .user_option .cart_link svg {
   width: 17px;
   height: auto;
