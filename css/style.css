@@ -342,6 +342,21 @@ a:focus {
           align-items: center;
   position: relative;
   padding: 45px 0 75px 0;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Pozisyonu relative yapın */
+}
+.slider_section .detail-box h1,
+.slider_section .detail-box p {
+  color: #ffffff; /* Yazı rengini beyaz yapın */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Gölge efekti ekleyin */
+}
+.slider_section .detail-box a.btn1 {
+  background-color: #ffbe33; /* Buton arka plan rengi */
+  color: #ffffff; /* Buton yazı rengi */
+  padding: 10px 20px; /* Buton iç boşluk */
+  border-radius: 5px; /* Buton kenar yuvarlaklığı */
+  text-decoration: none; /* Alt çizgiyi kaldır */
 }
 
 .slider_section .row {
@@ -358,6 +373,134 @@ a:focus {
 .slider_section .detail-box {
   color: #ffffff;
   margin-bottom: 145px;
+  background-color: rgba(0, 0, 0, 0.5); /* Arka plan rengi ekleyin ve saydamlığı ayarlayın */
+  padding: 20px; /* İç boşluk ekleyin */
+  border-radius: 10px; /* Kenar yuvarlaklığı ekleyin */
+  position: relative; /* Pozisyonu relative yapın */
+  z-index: 1; 
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading-section {
+  margin-bottom: 30px;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.heading-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Menü Stilleri */
+.menu-wrap {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading-menu {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menus {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.menus:last-child {
+  border-bottom: none;
+}
+
+.menu-img {
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.one-half h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.one-forth .price {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* İkon Stilleri */
+.flat {
+  position: absolute;
+  font-size: 3rem;
+  color: #e74c3c;
+  opacity: 0.2;
+}
+
+.flaticon-bread {
+  top: 10px;
+  left: 10px;
+}
+
+.flaticon-breakfast {
+  bottom: 10px;
+  right: 10px;
+}
+
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+
+  .menus {
+    flex-direction: column;
+  }
+
+  .menu-img {
+    width: 100%;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 .slider_section .detail-box h1 {
